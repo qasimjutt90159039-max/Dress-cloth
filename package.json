@@ -4,7 +4,7 @@
   "private": true,
   "description": "Production-ready luxury Pakistani hand-embroidered clothing store with Node.js/Express API and React.js frontend.",
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build && node copy-dist.js",
+    "build": "node build.js",
     "start": "node backend/src/server.js",
     "build:frontend": "npm --prefix frontend run build",
     "install:backend": "npm --prefix backend install",
