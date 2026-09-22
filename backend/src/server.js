@@ -84,7 +84,8 @@ const limiter = rateLimit({
 app.use('/api', limiter);
 
 // Serve Static Uploads
-app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
+const staticUploadsDir = process.env.VERCEL ? '/tmp/uploads' : path.join(process.cwd(), 'uploads');
+app.use('/uploads', express.static(staticUploadsDir));
 
 // Health Check & Business Info
 app.get('/api/health', (req, res) => {
@@ -125,20 +126,22 @@ app.use('/api/settings', settingsRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
-// Start Server
-const PORT = process.env.PORT || 5000;
-const server = app.listen(PORT, () => {
-  console.log(`=======================================================`);
-  console.log(`🌸 ${BUSINESS_INFO.name} API Server Running`);
-  console.log(`📍 Address: ${BUSINESS_INFO.address}`);
-  console.log(`📞 Phone / WhatsApp: ${BUSINESS_INFO.phone}`);
-  console.log(`🚀 Mode: ${process.env.NODE_ENV || 'development'} on port ${PORT}`);
-  console.log(`=======================================================`);
-});
+// Start Server (only when running as standalone Node server, not on Vercel serverless)
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`=======================================================`);
+    console.log(`🌸 ${BUSINESS_INFO.name} API Server Running`);
+    console.log(`📍 Address: ${BUSINESS_INFO.address}`);
+    console.log(`📞 Phone / WhatsApp: ${BUSINESS_INFO.phone}`);
+    console.log(`🚀 Mode: ${process.env.NODE_ENV || 'development'} on port ${PORT}`);
+    console.log(`=======================================================`);
+  });
 
-// Handle unhandled promise rejections
-process.on('unhandledRejection', (err) => {
-  console.error(`Unhandled Rejection Error: ${err.message}`);
-});
+  // Handle unhandled promise rejections
+  process.on('unhandledRejection', (err) => {
+    console.error(`Unhandled Rejection Error: ${err.message}`);
+  });
+}
 
 export default app;
