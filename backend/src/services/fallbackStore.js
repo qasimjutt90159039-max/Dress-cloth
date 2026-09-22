@@ -261,6 +261,28 @@ export const fallbackApiMiddleware = (req, res, next) => {
     return res.json({ success: true, count: categories.length, categories });
   }
 
+  const categorySlugMatch = path.match(/^\/api\/categories\/slug\/([^/]+)$/);
+  if (categorySlugMatch && method === 'GET') {
+    const slug = categorySlugMatch[1];
+    const cat = categories.find(c => c.slug === slug);
+    if (!cat) {
+      return res.status(404).json({ success: false, message: 'Category not found' });
+    }
+    const catProducts = products.filter(p => p.category?.slug === slug || p.categorySlug === slug);
+    return res.json({ success: true, category: cat, products: catProducts });
+  }
+
+  const categoryIdMatch = path.match(/^\/api\/categories\/([^/]+)$/);
+  if (categoryIdMatch && method === 'GET') {
+    const id = categoryIdMatch[1];
+    const cat = categories.find(c => c._id === id || c.slug === id);
+    if (!cat) {
+      return res.status(404).json({ success: false, message: 'Category not found' });
+    }
+    const catProducts = products.filter(p => p.category?.slug === cat.slug || p.categorySlug === cat.slug);
+    return res.json({ success: true, category: cat, products: catProducts });
+  }
+
   if (path === '/api/categories' && method === 'POST') {
     const newCat = {
       _id: `cat_${Date.now()}`,

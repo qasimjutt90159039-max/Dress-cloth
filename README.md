@@ -192,7 +192,7 @@ Open **`http://localhost:5173`** in your browser!
    - **Party Wear & Formal:** Pure Chiffon Resham, Organza Mukaish Angrakha, Velvet Kaftan.
    - **Chikankari & Daily Lawn:** Multani hand-done Chikankari kurtis, Shadow work, Kashmiri Phulkari.
    - **Shawls & Dupattas:** Kashmiri Tilla Velvet Shawls, Multani Phulkari Chadar, Hand-painted Organza.
-   - **Traditional Footwear:** Handcrafted Multani Tilla Khussa with padded sole.
+   - **Embroidered Maxis & Pishwas:** Hand-embellished Pakistani flared maxis, kalidar pishwas, and Anarkali gowns.
 2. **Pakistani Checkout Flow:**
    - Cash on Delivery (COD) with automated delivery fee calculation.
    - Direct JazzCash / EasyPaisa / Bank Account details displayed with slip upload field.
