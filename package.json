@@ -2,11 +2,9 @@
   "name": "hand-embroidered-dresses",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "description": "Production-ready luxury Pakistani hand-embroidered clothing store with Node.js/Express API and React.js frontend.",
   "scripts": {
     "build": "npm --prefix frontend install && npm --prefix frontend run build",
-    "vercel-build": "npm --prefix frontend install && npm --prefix frontend run build",
     "build:frontend": "npm --prefix frontend run build",
     "install:backend": "npm --prefix backend install",
     "install:frontend": "npm --prefix frontend install",
