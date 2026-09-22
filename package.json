@@ -1,0 +1,22 @@
+{
+  "name": "hand-embroidered-dresses",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready luxury Pakistani hand-embroidered clothing store with Node.js/Express API and React.js frontend.",
+  "scripts": {
+    "install:backend": "npm --prefix backend install",
+    "install:frontend": "npm --prefix frontend install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "seed": "npm --prefix backend run seed",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "start:backend": "npm --prefix backend start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "Hand Embroidered Dresses Multan",
+  "license": "ISC"
+}

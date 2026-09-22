@@ -1,0 +1,1372 @@
+/**
+ * Realistic Seed Data for Hand Embroidered Dresses - Multan, Pakistan
+ * Authentic boutique collection with 48 UNIQUE handcrafted dresses across 8 categories.
+ * Every product has a distinct design, genuine fabric, and a unique, dedicated image.
+ */
+
+export const categoriesData = [
+  {
+    name: "Bridal Wear",
+    slug: "bridal-dresses",
+    description: "Heavily hand-embellished bridal lehengas, maxis, and ghararas featuring heirloom Zardozi, Aari, and Dabka work.",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 1
+  },
+  {
+    name: "Luxury Party Wear",
+    slug: "party-wear",
+    description: "Opulent formal ensembles tailored with delicate Resham embroidery, Sitara, and pearls on pure chiffon and organza.",
+    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 2
+  },
+  {
+    name: "Casual & Daily Wear",
+    slug: "casual-daily-wear",
+    description: "Breathable pure lawn, khaddar, and cotton kurtis with intricate Multani tanka and Chikankari stitch craft.",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 3
+  },
+  {
+    name: "Shawls & Dupattas",
+    slug: "shawls-dupattas",
+    description: "Regal Kashmiri Tilla work shawls, micro-velvet wraps, and vibrant Phulkari & Sheesha embroidered dupattas.",
+    image: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 4
+  },
+  {
+    name: "Unstitched Fabric",
+    slug: "unstitched-fabric",
+    description: "Premium unstitched 3-piece and 2-piece luxury fabrics with hand-embroidered front panels, necklines, and borders.",
+    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 5
+  },
+  {
+    name: "Ready-to-Wear (Pret)",
+    slug: "ready-to-wear",
+    description: "Pret-a-porter designer silhouettes with masterfully placed needlework, ready for immediate dispatch.",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 6
+  },
+  {
+    name: "Kids Handcrafted Dresses",
+    slug: "kids-dresses",
+    description: "Delightful little frocks, ghararas, and kurtas with soft fabric backings and gentle hand embroidery.",
+    image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=800&q=80",
+    isFeatured: false,
+    order: 7
+  },
+  {
+    name: "Embroidered Maxis & Pishwas",
+    slug: "maxis-pishwas",
+    description: "Grand flared Kalidar Pishwas, floor-length Mughal maxis, and flowy festive gowns with intricate handwork.",
+    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=80",
+    isFeatured: true,
+    order: 8
+  }
+];
+
+export const productsData = [
+  // ==========================================
+  // 1. BRIDAL WEAR (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Shahi Noorani Zardozi Bridal Lehenga",
+    sku: "HED-BRD-001",
+    categorySlug: "bridal-dresses",
+    price: 65000,
+    salePrice: 58500,
+    onSale: true,
+    stock: 4,
+    embroideryType: "Zardozi",
+    fabric: "Micro Velvet & Banarsi Silk",
+    sizes: ["S", "M", "L", "Custom Size"],
+    colors: [{ name: "Deep Maroon", hex: "#5C061D" }, { name: "Antique Crimson", hex: "#7A1028" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80", alt: "Zardozi Bridal Lehenga", isPrimary: true }
+    ],
+    description: "Monumental bridal masterwork handcrafted over 320 artisan hours in Multan. Intricate French wire bullion, genuine Nakshi, and Zari florals woven across pure micro-velvet and pure silk lehenga borders.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 5.0,
+    numReviews: 18,
+    tags: ["bridal", "zardozi", "velvet", "maroon", "lehenga", "multan"]
+  },
+  {
+    title: "Gulbahar Aari Work Royal Gharara Set",
+    sku: "HED-BRD-002",
+    categorySlug: "bridal-dresses",
+    price: 52000,
+    salePrice: null,
+    onSale: false,
+    stock: 5,
+    embroideryType: "Aari Work",
+    fabric: "Pure Raw Silk & Organza",
+    sizes: ["XS", "S", "M", "L", "Custom Size"],
+    colors: [{ name: "Rust Gold", hex: "#C5A059" }, { name: "Emerald Olive", hex: "#2E5339" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1675856531253-5940b77ea03e?auto=format&fit=crop&w=1000&q=80", alt: "Aari Work Gharara", isPrimary: true }
+    ],
+    description: "Timeless Nawabi silhouette featuring traditional Aari needlework across the knee-panel gharara flare, paired with an embellished organza dupatta framed with scalloped kiran.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 12,
+    tags: ["gharara", "aari", "bridal", "raw silk", "organza"]
+  },
+  {
+    title: "Falaknuma Dabka & Mukaish Bridal Maxi",
+    sku: "HED-BRD-003",
+    categorySlug: "bridal-dresses",
+    price: 62000,
+    salePrice: null,
+    onSale: false,
+    stock: 3,
+    embroideryType: "Mukaish / Kamdani",
+    fabric: "Pure Chiffon & Tissue Silk",
+    sizes: ["S", "M", "L", "Custom Size"],
+    colors: [{ name: "Ivory Gold", hex: "#EAE0D0" }, { name: "Rose Gold", hex: "#C98A7B" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=1000&q=80", alt: "Mukaish Bridal Maxi", isPrimary: true }
+    ],
+    description: "Extravagant floor-length bridal gown dotted with hand-punched pure silver Mukaish (badla) stars, framed by intricate Dabka and semi-precious stone work along the empire neckline.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 14,
+    tags: ["maxi", "mukaish", "dabka", "bridal", "ivory"]
+  },
+  {
+    title: "Dastaan-e-Multan Heirloom Red Farshi Lehenga",
+    sku: "HED-BRD-004",
+    categorySlug: "bridal-dresses",
+    price: 59000,
+    salePrice: 53500,
+    onSale: true,
+    stock: 3,
+    embroideryType: "Multani Traditional Hand Embroidery",
+    fabric: "Pure Jamawar & Micro Velvet",
+    sizes: ["S", "M", "L", "Custom Size"],
+    colors: [{ name: "Bridal Red", hex: "#8A0B25" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1742891601435-39de27531cc7?auto=format&fit=crop&w=1000&q=80", alt: "Farshi Lehenga", isPrimary: true }
+    ],
+    description: "Multan's proud heritage captured on deep bridal red Jamawar. Features traditional chain stitches, sitara, and gold thread motifs representing ancient floral architecture of the historic walled city.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 9,
+    tags: ["multani", "farshi", "jamawar", "red", "bridal"]
+  },
+  {
+    title: "Noor-e-Kainat Emerald Velvet Barat Lehenga",
+    sku: "HED-BRD-005",
+    categorySlug: "bridal-dresses",
+    price: 68000,
+    salePrice: 62000,
+    onSale: true,
+    stock: 2,
+    embroideryType: "Zardozi",
+    fabric: "Micro Velvet",
+    sizes: ["S", "M", "L", "Custom Size"],
+    colors: [{ name: "Dark Emerald", hex: "#0B4636" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1770748147858-a7c2eb8012ea?auto=format&fit=crop&w=1000&q=80", alt: "Emerald Velvet Barat Lehenga", isPrimary: true }
+    ],
+    description: "A royal barat ensemble in dark emerald velvet featuring dense antique gold dabka, resham needlework florets, and a dual-bordered bridal dupatta.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 8,
+    tags: ["emerald", "velvet", "zardozi", "barat", "lehenga"]
+  },
+  {
+    title: "Shehnai Banarsi Zari Walima Gown",
+    sku: "HED-BRD-006",
+    categorySlug: "bridal-dresses",
+    price: 54000,
+    salePrice: null,
+    onSale: false,
+    stock: 4,
+    embroideryType: "Gota Patti",
+    fabric: "Banarsi Silk & Organza",
+    sizes: ["S", "M", "L", "Custom Size"],
+    colors: [{ name: "Pastel Peach", hex: "#F4C2C2" }, { name: "Champagne Gold", hex: "#D4AF37" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1767955694884-d4bf352c23c2?auto=format&fit=crop&w=1000&q=80", alt: "Banarsi Walima Gown", isPrimary: true }
+    ],
+    description: "Graceful pastel peach and champagne Banarsi silk walima gown crafted with fine hand-applied gota patti, pearls, and soft Swarovski crystal sprinkle.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 11,
+    tags: ["walima", "gown", "banarsi", "gota patti", "peach"]
+  },
+
+  // ==========================================
+  // 2. LUXURY PARTY WEAR (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Meher Emerald Pure Raw Silk Peshwas",
+    sku: "HED-PTY-007",
+    categorySlug: "party-wear",
+    price: 24500,
+    salePrice: 21999,
+    onSale: true,
+    stock: 8,
+    embroideryType: "Gota Patti",
+    fabric: "Pure Raw Silk",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Emerald Green", hex: "#0B4636" }, { name: "Royal Teal", hex: "#0E5A59" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=1000&q=80", alt: "Emerald Silk Peshwas", isPrimary: true }
+    ],
+    description: "Flowing 16-kali Raw Silk Peshwas adorned with hand-beaten gold Gota Patti florets and finished with hand-knotted Resham tassels on the back dori.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 24,
+    tags: ["peshwas", "emerald", "raw silk", "gota patti", "party wear"]
+  },
+  {
+    title: "Zehra Chiffon Mirror Work Angrakha",
+    sku: "HED-PTY-008",
+    categorySlug: "party-wear",
+    price: 19500,
+    salePrice: null,
+    onSale: false,
+    stock: 12,
+    embroideryType: "Sheesha / Mirror Work",
+    fabric: "Chiffon",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Blush Peach", hex: "#E8A598" }, { name: "Soft Lilac", hex: "#C3B1E1" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80", alt: "Mirror Work Angrakha", isPrimary: true }
+    ],
+    description: "Flattering crossover Angrakha style embellished with authentic hand-stitched round mirrors (sheesha) along the overlapping neckline and voluminous flared hem.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.7,
+    numReviews: 17,
+    tags: ["angrakha", "sheesha", "mirror work", "chiffon", "formal"]
+  },
+  {
+    title: "Sitara-e-Subh Organza 3-Piece Suit",
+    sku: "HED-PTY-009",
+    categorySlug: "party-wear",
+    price: 22500,
+    salePrice: 18900,
+    onSale: true,
+    stock: 10,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Organza",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Champagne Gold", hex: "#D4AF37" }, { name: "Powder Blue", hex: "#B0E0E6" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80", alt: "Organza 3-Piece Formal", isPrimary: true }
+    ],
+    description: "Crisp organza shirt layered with multi-hued Resham thread embroidery, organza dupatta with scalloped borders, and matching silk trousers.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 21,
+    tags: ["organza", "resham", "3-piece", "party wear", "champagne"]
+  },
+  {
+    title: "Nazneen Midnight Velvet Evening Tunic",
+    sku: "HED-PTY-010",
+    categorySlug: "party-wear",
+    price: 18500,
+    salePrice: null,
+    onSale: false,
+    stock: 9,
+    embroideryType: "Kashmiri Tilla",
+    fabric: "Micro Velvet",
+    sizes: ["XS", "S", "M", "L", "XXL"],
+    colors: [{ name: "Midnight Navy", hex: "#001F3F" }, { name: "Plum Wine", hex: "#581845" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1649793061426-b36b041ced21?auto=format&fit=crop&w=1000&q=80", alt: "Velvet Evening Tunic", isPrimary: true }
+    ],
+    description: "Plush micro-velvet tunic framed by luminous metallic Kashmiri Tilla cord embroidery along the cuffs, neck slit, and side vents.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 26,
+    tags: ["velvet", "tilla", "navy", "kurti", "winter formal"]
+  },
+  {
+    title: "Chand Tara Jet Black Georgette Anarkali",
+    sku: "HED-PTY-011",
+    categorySlug: "party-wear",
+    price: 26000,
+    salePrice: 23500,
+    onSale: true,
+    stock: 6,
+    embroideryType: "Zardozi",
+    fabric: "Georgette",
+    sizes: ["S", "M", "L", "Custom Size"],
+    colors: [{ name: "Black Noir", hex: "#1A1A1A" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1693275542358-29602edf6088?auto=format&fit=crop&w=1000&q=80", alt: "Black Anarkali", isPrimary: true }
+    ],
+    description: "Dramatic jet-black georgette Anarkali featuring dense silver and antique gold Zardozi chest yoke, complemented by a twinkling star-sprinkled dupatta.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 10,
+    tags: ["black", "anarkali", "zardozi", "georgette", "formal"]
+  },
+  {
+    title: "Banafsha Plum Resham Cutwork Sharara Suit",
+    sku: "HED-PTY-012",
+    categorySlug: "party-wear",
+    price: 27500,
+    salePrice: 24900,
+    onSale: true,
+    stock: 7,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Raw Silk & Chiffon",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Plum Wine", hex: "#4A0E2E" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1687585612088-afdb1c61289a?auto=format&fit=crop&w=1000&q=80", alt: "Plum Sharara Suit", isPrimary: true }
+    ],
+    description: "Rich plum wine raw silk short kurti paired with a flared double-layered sharara, finished with delicate floral resham laser cutwork borders.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.8,
+    numReviews: 15,
+    tags: ["sharara", "plum", "cutwork", "resham", "party wear"]
+  },
+
+  // ==========================================
+  // 3. CASUAL & DAILY WEAR (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Multani Chikan Kaari Handspun Pure Lawn Kurti",
+    sku: "HED-CSL-013",
+    categorySlug: "casual-daily-wear",
+    price: 4500,
+    salePrice: 3850,
+    onSale: true,
+    stock: 25,
+    embroideryType: "Chikankari",
+    fabric: "Pure Lawn",
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    colors: [{ name: "Ivory White", hex: "#FDFBF7" }, { name: "Sky Blue", hex: "#87CEEB" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80", alt: "Chikankari Kurti", isPrimary: true }
+    ],
+    description: "Breathable 100% fine Multani lawn fabric stitched with all-over intricate Bakhiya and Phanda Chikankari needlework. Ideal for daily Pakistani summers.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 42,
+    tags: ["chikankari", "lawn", "summer", "white kurti", "multan"]
+  },
+  {
+    title: "Sufi Tanka Pure Cotton Mustard Yellow Kurti",
+    sku: "HED-CSL-014",
+    categorySlug: "casual-daily-wear",
+    price: 3950,
+    salePrice: null,
+    onSale: false,
+    stock: 20,
+    embroideryType: "Multani Traditional Hand Embroidery",
+    fabric: "Pure Lawn",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Mustard Gold", hex: "#E1AD01" }, { name: "Rust Orange", hex: "#C04000" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1632826727346-43a7ac6bcb1b?auto=format&fit=crop&w=1000&q=80", alt: "Mustard Cotton Kurti", isPrimary: true }
+    ],
+    description: "Sun-drenched mustard yellow pure cotton tunic hand-stitched by village artisans using Multani 'Sufi Tanka' needlecraft along the button placket and cuffs.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 29,
+    tags: ["mustard", "sufi tanka", "cotton", "casual", "kurti"]
+  },
+  {
+    title: "Multani Shadow Work Lawn Kurti (Blush Pink)",
+    sku: "HED-CSL-015",
+    categorySlug: "casual-daily-wear",
+    price: 4300,
+    salePrice: 3750,
+    onSale: true,
+    stock: 28,
+    embroideryType: "Chikankari",
+    fabric: "Pure Lawn",
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    colors: [{ name: "Blush Pink", hex: "#FFD1DC" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1743229995753-69be4b438204?auto=format&fit=crop&w=1000&q=80", alt: "Pink Shadow Work Kurti", isPrimary: true }
+    ],
+    description: "Soft delicate pink lawn stitched with classic Multani white cotton thread shadow work, finished with handmade crochet lace trims.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 36,
+    tags: ["pink", "shadow work", "lawn", "kurti", "multan"]
+  },
+  {
+    title: "Indus Indigo Sindhi Ralli Stitch Cotton Shirt",
+    sku: "HED-CSL-016",
+    categorySlug: "casual-daily-wear",
+    price: 4800,
+    salePrice: null,
+    onSale: false,
+    stock: 15,
+    embroideryType: "Sindhi Ralli Patchwork",
+    fabric: "Handspun Khaddar",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Deep Indigo", hex: "#1A2B4C" }, { name: "Natural Ecru", hex: "#F3EFE0" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1632195217465-4f334314762f?auto=format&fit=crop&w=1000&q=80", alt: "Sindhi Ralli Kurti", isPrimary: true }
+    ],
+    description: "Authentic Southern Punjab and Sindh border craft featuring geometric Ralli triangle patchwork and mirror florets on natural handspun breathable cotton.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.7,
+    numReviews: 19,
+    tags: ["ralli", "indigo", "patchwork", "khaddar", "cultural"]
+  },
+  {
+    title: "Subh-e-Bahar Mint Green Threadwork Kurti",
+    sku: "HED-CSL-017",
+    categorySlug: "casual-daily-wear",
+    price: 4200,
+    salePrice: 3600,
+    onSale: true,
+    stock: 22,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Lawn",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Mint Green", hex: "#98FF98" }, { name: "Aqua Ice", hex: "#D4F1F4" }],
+    images: [
+      { url: "https://plus.unsplash.com/premium_photo-1682092039530-584ae1d9da7f?auto=format&fit=crop&w=1000&q=80", alt: "Mint Green Kurti", isPrimary: true }
+    ],
+    description: "Refreshing pastel mint green kurti featuring subtle floral bels stitched with double-ply silk thread. Lightweight and summer-friendly.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 21,
+    tags: ["mint", "lawn", "summer", "threadwork", "kurti"]
+  },
+  {
+    title: "Chambeli Lavender Chikankari Summer Tunic",
+    sku: "HED-CSL-018",
+    categorySlug: "casual-daily-wear",
+    price: 4600,
+    salePrice: 3950,
+    onSale: true,
+    stock: 18,
+    embroideryType: "Chikankari",
+    fabric: "Pure Lawn",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [{ name: "Lavender", hex: "#E6E6FA" }],
+    images: [
+      { url: "https://plus.unsplash.com/premium_photo-1691030256214-dc57034ec935?auto=format&fit=crop&w=1000&q=80", alt: "Lavender Chikankari Tunic", isPrimary: true }
+    ],
+    description: "Alluring lavender Swiss lawn kurti embellished with pure white cotton thread Chikankari motifs and fine pin-tuck detailing on sleeves.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 4.8,
+    numReviews: 25,
+    tags: ["lavender", "chikankari", "tunic", "summer", "multan"]
+  },
+
+  // ==========================================
+  // 4. SHAWLS & DUPATTAS (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Shah-e-Kashmir Pure Velvet Tilla Border Shawl",
+    sku: "HED-SHW-019",
+    categorySlug: "shawls-dupattas",
+    price: 18500,
+    salePrice: 15999,
+    onSale: true,
+    stock: 12,
+    embroideryType: "Kashmiri Tilla",
+    fabric: "Micro Velvet",
+    sizes: ["Standard Shawl (2.5m)"],
+    colors: [{ name: "Jet Black", hex: "#000000" }, { name: "Regal Maroon", hex: "#5C061D" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80", alt: "Velvet Tilla Shawl", isPrimary: true }
+    ],
+    description: "Opulent micro-9000 pure velvet shawl edged with antique golden Kashmiri Tilla zari work along all four sides with heavy pallu paisleys.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 5.0,
+    numReviews: 38,
+    tags: ["shawl", "tilla", "velvet", "black", "winter", "wedding"]
+  },
+  {
+    title: "Dulhan Heirloom Crimson Zardozi Velvet Shawl",
+    sku: "HED-SHW-020",
+    categorySlug: "shawls-dupattas",
+    price: 21500,
+    salePrice: null,
+    onSale: false,
+    stock: 7,
+    embroideryType: "Zardozi",
+    fabric: "Micro Velvet",
+    sizes: ["Standard Shawl (2.5m)"],
+    colors: [{ name: "Crimson Red", hex: "#990000" }],
+    images: [
+      { url: "https://plus.unsplash.com/premium_photo-1682091998866-49086baf65b3?auto=format&fit=crop&w=1000&q=80", alt: "Crimson Velvet Bridal Shawl", isPrimary: true }
+    ],
+    description: "Extravagant bridal velvet shawl in royal crimson red, embellished with dense floral Zardozi borders, gold sequin sprinkles, and kiran edging.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 29,
+    tags: ["bridal shawl", "crimson", "zardozi", "velvet", "heirloom"]
+  },
+  {
+    title: "Multani Bagh Phulkari Geometric Handwoven Chadar",
+    sku: "HED-SHW-021",
+    categorySlug: "shawls-dupattas",
+    price: 8500,
+    salePrice: 7200,
+    onSale: true,
+    stock: 14,
+    embroideryType: "Phulkari",
+    fabric: "Handspun Khaddar",
+    sizes: ["Standard Chadar (2.7m)"],
+    colors: [{ name: "Multicolour Festive", hex: "#FF5733" }],
+    images: [
+      { url: "https://plus.unsplash.com/premium_photo-1682096060450-6ac06a3a0478?auto=format&fit=crop&w=1000&q=80", alt: "Phulkari Chadar", isPrimary: true }
+    ],
+    description: "Spectacular traditional 'Bagh' (Garden) Phulkari hand-embroidered with untwisted silk floss (Pat) across black khaddar. Vibrant mustard, orange, and crimson.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.8,
+    numReviews: 16,
+    tags: ["phulkari", "bagh", "chadar", "khaddar", "cultural"]
+  },
+  {
+    title: "Champa Kali Gota Patti Chiffon Festive Dupatta",
+    sku: "HED-SHW-022",
+    categorySlug: "shawls-dupattas",
+    price: 5800,
+    salePrice: 4999,
+    onSale: true,
+    stock: 22,
+    embroideryType: "Gota Patti",
+    fabric: "Chiffon",
+    sizes: ["Standard Dupatta (2.5m)"],
+    colors: [{ name: "Lemon Yellow", hex: "#FAFA33" }, { name: "Emerald Green", hex: "#0B4636" }],
+    images: [
+      { url: "https://plus.unsplash.com/premium_photo-1682090778813-3938ba76ee57?auto=format&fit=crop&w=1000&q=80", alt: "Gota Dupatta", isPrimary: true }
+    ],
+    description: "Festive Mayun & Mehndi essential dupatta featuring classic Gota patti flower motifs and heavy golden fringe borders.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 20,
+    tags: ["dupatta", "gota patti", "mehndi", "mayun", "festive"]
+  },
+  {
+    title: "Gul-e-Nargis Hand-Painted Organza Dupatta",
+    sku: "HED-SHW-023",
+    categorySlug: "shawls-dupattas",
+    price: 6500,
+    salePrice: null,
+    onSale: false,
+    stock: 16,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Organza",
+    sizes: ["Standard Dupatta (2.5m)"],
+    colors: [{ name: "Ivory Flora", hex: "#FFFFF0" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1000&q=80", alt: "Hand Painted Organza Dupatta", isPrimary: true }
+    ],
+    description: "Artistic sheer organza dupatta hand-painted with delicate floral watercolors, highlighted with hand-done silver resham stitches and scalloped borders.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 18,
+    tags: ["organza", "dupatta", "hand painted", "floral", "ivory"]
+  },
+  {
+    title: "Pashmina Shahi Reversible Woollen Tilla Wrap",
+    sku: "HED-SHW-024",
+    categorySlug: "shawls-dupattas",
+    price: 16500,
+    salePrice: 14500,
+    onSale: true,
+    stock: 11,
+    embroideryType: "Kashmiri Tilla",
+    fabric: "Handspun Khaddar",
+    sizes: ["Standard Shawl (2.5m)"],
+    colors: [{ name: "Camel Tan", hex: "#C19A6B" }, { name: "Almond Cream", hex: "#EFDECD" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=1000&q=80", alt: "Woollen Tilla Wrap", isPrimary: true }
+    ],
+    description: "Featherweight yet exceptionally warm fine woollen wrap featuring dual-sided Kashmiri tilla paisley motifs in muted antique silver and gold.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 23,
+    tags: ["pashmina", "wool", "wrap", "tilla", "winter"]
+  },
+
+  // ==========================================
+  // 5. UNSTITCHED FABRIC (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Multani Swiss Lawn 3-Piece Unstitched Suit with Heavy Resham Daman",
+    sku: "HED-UNS-025",
+    categorySlug: "unstitched-fabric",
+    price: 7800,
+    salePrice: 6999,
+    onSale: true,
+    stock: 25,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Lawn",
+    sizes: ["Unstitched (3-Piece)"],
+    colors: [{ name: "Cobalt Blue", hex: "#0047AB" }, { name: "Ivory", hex: "#FFFFF0" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80", alt: "Swiss Lawn 3-Piece Unstitched", isPrimary: true }
+    ],
+    description: "Premium 3-piece unstitched Swiss lawn suit. Includes fully embroidered front shirt panel, embroidered daman border, dyed cotton trousers, and digital printed silk dupatta.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 31,
+    tags: ["unstitched", "lawn", "3-piece", "resham", "blue"]
+  },
+  {
+    title: "Raw Silk 2-Piece Unstitched Suit with Intricate Aari Jaal",
+    sku: "HED-UNS-026",
+    categorySlug: "unstitched-fabric",
+    price: 9500,
+    salePrice: null,
+    onSale: false,
+    stock: 18,
+    embroideryType: "Aari Work",
+    fabric: "Pure Raw Silk",
+    sizes: ["Unstitched (2-Piece)"],
+    colors: [{ name: "Teal Green", hex: "#008080" }, { name: "Burnished Copper", hex: "#B87333" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80", alt: "Raw Silk 2-Piece Unstitched", isPrimary: true }
+    ],
+    description: "Opulent 80-gram pure raw silk unstitched shirt and trouser fabric, patterned with an exquisite all-over Aari floral jaal across the front and sleeves.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.8,
+    numReviews: 14,
+    tags: ["raw silk", "unstitched", "aari", "teal", "formal fabric"]
+  },
+  {
+    title: "Pure Chiffon 3-Piece Unstitched Wedding Suit with Zari & Sequins",
+    sku: "HED-UNS-027",
+    categorySlug: "unstitched-fabric",
+    price: 14500,
+    salePrice: 12900,
+    onSale: true,
+    stock: 12,
+    embroideryType: "Zardozi",
+    fabric: "Chiffon",
+    sizes: ["Unstitched (3-Piece)"],
+    colors: [{ name: "Powder Peach", hex: "#FADBD8" }, { name: "Rose Gold", hex: "#B76E79" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=1000&q=80", alt: "Chiffon Wedding Unstitched", isPrimary: true }
+    ],
+    description: "Heavy wedding formal unstitched chiffon suit with delicate metallic zari needlework, pearl drops, and a heavy 4-side embroidered chiffon dupatta.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 5.0,
+    numReviews: 22,
+    tags: ["chiffon", "unstitched", "wedding", "zari", "peach"]
+  },
+  {
+    title: "Banarsi Jacquard 3-Piece Unstitched Suit with Organza Neckline",
+    sku: "HED-UNS-028",
+    categorySlug: "unstitched-fabric",
+    price: 11200,
+    salePrice: 9800,
+    onSale: true,
+    stock: 15,
+    embroideryType: "Gota Patti",
+    fabric: "Jacquard",
+    sizes: ["Unstitched (3-Piece)"],
+    colors: [{ name: "Plum Purple", hex: "#4B0082" }, { name: "Antique Gold", hex: "#C5A059" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=80", alt: "Jacquard Unstitched Suit", isPrimary: true }
+    ],
+    description: "Royal Jacquard self-woven fabric paired with a heavily embroidered organza neck patch, organza sleeve borders, and a matching Banarsi dupatta.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.7,
+    numReviews: 12,
+    tags: ["jacquard", "unstitched", "banarsi", "gota patti", "plum"]
+  },
+  {
+    title: "Handspun Winter Khaddar Unstitched 3-Piece with Wool Embroidery",
+    sku: "HED-UNS-029",
+    categorySlug: "unstitched-fabric",
+    price: 6800,
+    salePrice: null,
+    onSale: false,
+    stock: 20,
+    embroideryType: "Multani Traditional Hand Embroidery",
+    fabric: "Handspun Khaddar",
+    sizes: ["Unstitched (3-Piece)"],
+    colors: [{ name: "Rust Terracotta", hex: "#E2725B" }, { name: "Coffee Brown", hex: "#4B3621" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80", alt: "Winter Khaddar Unstitched", isPrimary: true }
+    ],
+    description: "Warm, hand-loomed Multani winter khaddar suit featuring thick wool thread cross-stitch geometric floral embroidery along front panel and wool shawl.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 28,
+    tags: ["khaddar", "winter", "unstitched", "wool embroidery", "terracotta"]
+  },
+  {
+    title: "Luxury Organza Wedding Collection 3-Piece Unstitched with Mukaish Net",
+    sku: "HED-UNS-030",
+    categorySlug: "unstitched-fabric",
+    price: 15500,
+    salePrice: 13800,
+    onSale: true,
+    stock: 9,
+    embroideryType: "Mukaish / Kamdani",
+    fabric: "Pure Organza",
+    sizes: ["Unstitched (3-Piece)"],
+    colors: [{ name: "Silver Mist", hex: "#C0C0C0" }, { name: "Rose Water", hex: "#F7CAC9" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1000&q=80", alt: "Organza Mukaish Unstitched", isPrimary: true }
+    ],
+    description: "Breathtaking silver and pastel pink organza suit layered with silver badla mukaish dots, zardozi neckline patch, and silk inner lining included.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 17,
+    tags: ["organza", "mukaish", "unstitched", "silver", "luxury"]
+  },
+
+  // ==========================================
+  // 6. READY-TO-WEAR (PRET) (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Qasre-e-Noor Stitched 2-Piece Pret Co-ord Set",
+    sku: "HED-PRT-031",
+    categorySlug: "ready-to-wear",
+    price: 8900,
+    salePrice: 7999,
+    onSale: true,
+    stock: 16,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Raw Silk",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Pristine Ivory", hex: "#FDFBF7" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80", alt: "Ivory Pret Co-ord Set", isPrimary: true }
+    ],
+    description: "Modern minimalist Pakistani luxury. Boxy cut raw silk tunic with tone-on-tone ivory silk threadwork along sleeves, paired with tailored cigarette pants.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 27,
+    tags: ["pret", "co-ord", "ivory", "stitched", "minimal"]
+  },
+  {
+    title: "Zamurd Emerald A-Line Stitched Pret Tunic with Tulip Shalwar",
+    sku: "HED-PRT-032",
+    categorySlug: "ready-to-wear",
+    price: 7500,
+    salePrice: null,
+    onSale: false,
+    stock: 19,
+    embroideryType: "Gota Patti",
+    fabric: "Pure Lawn",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Emerald Green", hex: "#0B4636" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=80", alt: "Emerald Pret Tunic", isPrimary: true }
+    ],
+    description: "Eye-catching jewel-toned green A-line ready-to-wear shirt adorned with delicate gold gota lines, paired with an embroidered tulip shalwar.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 23,
+    tags: ["emerald", "pret", "tulip shalwar", "gota", "stitched"]
+  },
+  {
+    title: "Gul-e-Daudi Front-Open Pret Long Shirt with Hand-done Buttons",
+    sku: "HED-PRT-033",
+    categorySlug: "ready-to-wear",
+    price: 9200,
+    salePrice: 8200,
+    onSale: true,
+    stock: 14,
+    embroideryType: "Chikankari",
+    fabric: "Cotton Net",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Dusty Rose", hex: "#DCAE96" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80", alt: "Front Open Pret Shirt", isPrimary: true }
+    ],
+    description: "Elegant front-open cotton net long jacket silhouette with Chikankari floral creepers, organza inserts, and hand-wrapped potli button closures.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 18,
+    tags: ["front open", "dusty rose", "pret", "cotton net", "jacket"]
+  },
+  {
+    title: "Shams High-Low Stitched Pret Kurta with Embroidered Culottes",
+    sku: "HED-PRT-034",
+    categorySlug: "ready-to-wear",
+    price: 8400,
+    salePrice: null,
+    onSale: false,
+    stock: 15,
+    embroideryType: "Sheesha / Mirror Work",
+    fabric: "Pure Lawn",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Warm Ochre", hex: "#CC7722" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1000&q=80", alt: "High Low Pret Kurta", isPrimary: true }
+    ],
+    description: "Contemporary high-low hemline pret kurta in warm ochre yellow, accented with miniature mirror discs and paired with scalloped embroidered culottes.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.7,
+    numReviews: 15,
+    tags: ["high low", "culottes", "pret", "ochre", "mirror work"]
+  },
+  {
+    title: "Ruby Regal Classic Stitched Daily Pret Kurti with Silk Tassels",
+    sku: "HED-PRT-035",
+    categorySlug: "ready-to-wear",
+    price: 6200,
+    salePrice: 5400,
+    onSale: true,
+    stock: 22,
+    embroideryType: "Multani Traditional Hand Embroidery",
+    fabric: "Pure Lawn",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: [{ name: "Ruby Maroon", hex: "#9B111E" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80", alt: "Ruby Pret Kurti", isPrimary: true }
+    ],
+    description: "Comfort-fit ready-to-wear kurta in rich ruby maroon with hand-embroidered floral neckline and playful handmade resham thread tassels.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 33,
+    tags: ["ruby", "maroon", "pret kurti", "tassels", "multani"]
+  },
+  {
+    title: "Firoza Flared Pret Angrakha Shirt with Organza Border",
+    sku: "HED-PRT-036",
+    categorySlug: "ready-to-wear",
+    price: 9800,
+    salePrice: 8700,
+    onSale: true,
+    stock: 11,
+    embroideryType: "Aari Work",
+    fabric: "Chiffon",
+    sizes: ["S", "M", "L", "XL"],
+    colors: [{ name: "Teal Blue", hex: "#008080" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1000&q=80", alt: "Flared Pret Angrakha", isPrimary: true }
+    ],
+    description: "Gracefully draped chiffon flared angrakha in deep turquoise teal with subtle gold Aari embroidery and layered sheer organza hem border.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 21,
+    tags: ["angrakha", "flared", "pret", "teal", "aari work"]
+  },
+
+  // ==========================================
+  // 7. KIDS HANDCRAFTED DRESSES (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Shehzadi Maroon Hand-Embroidered Velvet Kids Anarkali",
+    sku: "HED-KID-037",
+    categorySlug: "kids-dresses",
+    price: 6800,
+    salePrice: 5999,
+    onSale: true,
+    stock: 14,
+    embroideryType: "Zardozi",
+    fabric: "Micro Velvet",
+    sizes: ["2-3 Y", "4-5 Y", "6-7 Y", "8-9 Y", "10-12 Y"],
+    colors: [{ name: "Royal Maroon", hex: "#5C061D" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1000&q=80", alt: "Kids Velvet Anarkali", isPrimary: true }
+    ],
+    description: "Adorable festive micro-velvet Anarkali frock for little girls with lightweight golden tilla embroidery and soft cotton lining to protect delicate skin.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 19,
+    tags: ["kids", "anarkali", "velvet", "maroon", "eid dress"]
+  },
+  {
+    title: "Gul-e-Khandan Girls Festive Pink Mirror Work Lehenga Choli",
+    sku: "HED-KID-038",
+    categorySlug: "kids-dresses",
+    price: 7500,
+    salePrice: null,
+    onSale: false,
+    stock: 12,
+    embroideryType: "Sheesha / Mirror Work",
+    fabric: "Pure Raw Silk & Net",
+    sizes: ["3-4 Y", "5-6 Y", "7-8 Y", "9-10 Y"],
+    colors: [{ name: "Candy Pink", hex: "#E75480" }, { name: "Gold", hex: "#FFD700" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=1000&q=80", alt: "Kids Pink Lehenga Choli", isPrimary: true }
+    ],
+    description: "Festive lehenga choli for weddings and Eid. Lightweight acrylic safety mirrors and gold gota trim on a full flared net skirt with silk choli.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.8,
+    numReviews: 15,
+    tags: ["kids lehenga", "pink", "mirror work", "girls festive", "wedding"]
+  },
+  {
+    title: "Pari Mustard Yellow Haldi & Mehndi Girls Kurta Gharara",
+    sku: "HED-KID-039",
+    categorySlug: "kids-dresses",
+    price: 5900,
+    salePrice: 5200,
+    onSale: true,
+    stock: 16,
+    embroideryType: "Gota Patti",
+    fabric: "Pure Lawn & Georgette",
+    sizes: ["2-3 Y", "4-5 Y", "6-7 Y", "8-9 Y", "10-11 Y"],
+    colors: [{ name: "Bright Mustard", hex: "#FFDB58" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1000&q=80", alt: "Girls Haldi Kurta Gharara", isPrimary: true }
+    ],
+    description: "Cheerful mustard yellow kurta with knee-gathered miniature gharara pants, detailed with sparkling gota patti borders. Perfect for Mehndi events.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 24,
+    tags: ["kids gharara", "mustard", "mehndi", "haldi", "girls"]
+  },
+  {
+    title: "Nirmal Soft Mint Green Hand-Embroidered Cotton Frock",
+    sku: "HED-KID-040",
+    categorySlug: "kids-dresses",
+    price: 4200,
+    salePrice: 3600,
+    onSale: true,
+    stock: 22,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Lawn",
+    sizes: ["1-2 Y", "3-4 Y", "5-6 Y", "7-8 Y"],
+    colors: [{ name: "Mint Green", hex: "#98FF98" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1471286174890-9c112ffca56a?auto=format&fit=crop&w=1000&q=80", alt: "Kids Mint Cotton Frock", isPrimary: true }
+    ],
+    description: "Sweet pastel mint green pure cotton frock with handcrafted Multani floral needlework across the yoke and soft ruffled sleeves.",
+    isFeatured: false,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.7,
+    numReviews: 16,
+    tags: ["cotton frock", "mint", "kids", "comfortable", "hand embroidered"]
+  },
+  {
+    title: "Sitara Kids Turquoise Festive Pishwas with Gota Border",
+    sku: "HED-KID-041",
+    categorySlug: "kids-dresses",
+    price: 6900,
+    salePrice: null,
+    onSale: false,
+    stock: 10,
+    embroideryType: "Gota Patti",
+    fabric: "Chiffon & Silk",
+    sizes: ["3-4 Y", "5-6 Y", "7-8 Y", "9-10 Y", "11-12 Y"],
+    colors: [{ name: "Turquoise Blue", hex: "#40E0D0" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=80", alt: "Kids Turquoise Pishwas", isPrimary: true }
+    ],
+    description: "Royal turquoise blue flared ankle-length pishwas for young girls, finished with tiered gota lines and a matching micro-dupatta.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 12,
+    tags: ["pishwas", "turquoise", "kids formal", "gota", "girls"]
+  },
+  {
+    title: "Masoom Little Angel Pure White Chikankari Eid Frock",
+    sku: "HED-KID-042",
+    categorySlug: "kids-dresses",
+    price: 4500,
+    salePrice: 3900,
+    onSale: true,
+    stock: 18,
+    embroideryType: "Chikankari",
+    fabric: "Pure Lawn",
+    sizes: ["1-2 Y", "2-3 Y", "4-5 Y", "6-7 Y"],
+    colors: [{ name: "Pearl White", hex: "#FDFBF7" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1000&q=80", alt: "Kids White Chikankari Frock", isPrimary: true }
+    ],
+    description: "Pristine white Eid frock made from featherlight Multani lawn with exquisite tone-on-tone white thread Chikankari florets and scalloped lace.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 5.0,
+    numReviews: 28,
+    tags: ["eid dress", "chikankari", "white", "kids", "angel"]
+  },
+
+  // ==========================================
+  // 8. EMBROIDERED MAXIS & PISHWAS (6 UNIQUE DESIGNS)
+  // ==========================================
+  {
+    title: "Zohra Royal Maroon Kalidar Velvet Pishwas",
+    sku: "HED-MAX-043",
+    categorySlug: "maxis-pishwas",
+    price: 32000,
+    salePrice: 28500,
+    onSale: true,
+    stock: 6,
+    embroideryType: "Zardozi",
+    fabric: "Micro Velvet",
+    sizes: ["S", "M", "L", "XL", "Custom Size"],
+    colors: [{ name: "Royal Maroon", hex: "#5C061D" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=1000&q=80", alt: "Maroon Velvet Pishwas", isPrimary: true }
+    ],
+    description: "Magnificent 24-kali flared micro velvet bridal pishwas, heavily encrusted with antique gold zardozi bodice, dabka borders, and sheer organza dupatta.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 32,
+    tags: ["pishwas", "velvet", "maxi", "zardozi", "maroon", "bridal maxi"]
+  },
+  {
+    title: "Mehrunissa Deep Teal Raw Silk Flared Maxi",
+    sku: "HED-MAX-044",
+    categorySlug: "maxis-pishwas",
+    price: 28000,
+    salePrice: 24999,
+    onSale: true,
+    stock: 8,
+    embroideryType: "Aari Work",
+    fabric: "Pure Raw Silk",
+    sizes: ["XS", "S", "M", "L", "XL", "Custom Size"],
+    colors: [{ name: "Deep Teal", hex: "#005F73" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1000&q=80", alt: "Teal Raw Silk Maxi", isPrimary: true }
+    ],
+    description: "Floor-grazing Mughal flared maxi in pure raw silk with fine hooked Aari threadwork along the neckline, sleeves, and extensive flared hemline.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 4.9,
+    numReviews: 24,
+    tags: ["maxi", "raw silk", "teal", "aari work", "flared gown"]
+  },
+  {
+    title: "Noor Mahal Ivory Georgette Angrakha Gown",
+    sku: "HED-MAX-045",
+    categorySlug: "maxis-pishwas",
+    price: 26500,
+    salePrice: null,
+    onSale: false,
+    stock: 7,
+    embroideryType: "Sheesha / Mirror Work",
+    fabric: "Georgette",
+    sizes: ["S", "M", "L", "XL", "Custom Size"],
+    colors: [{ name: "Pearl Ivory", hex: "#FFFFF0" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=80", alt: "Ivory Angrakha Gown", isPrimary: true }
+    ],
+    description: "Graceful floor-length crossover Angrakha maxi in pure georgette, bordered with authentic hand-stitched mirror florets and delicate silver gota edging.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.9,
+    numReviews: 28,
+    tags: ["angrakha gown", "ivory", "mirror work", "georgette", "pishwas"]
+  },
+  {
+    title: "Parizad Dusty Rose Organza Floor-Length Pishwas",
+    sku: "HED-MAX-046",
+    categorySlug: "maxis-pishwas",
+    price: 29500,
+    salePrice: 26500,
+    onSale: true,
+    stock: 5,
+    embroideryType: "Resham Thread Embroidery",
+    fabric: "Pure Organza",
+    sizes: ["S", "M", "L", "XL", "Custom Size"],
+    colors: [{ name: "Dusty Rose", hex: "#DCAE96" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1000&q=80", alt: "Dusty Rose Organza Pishwas", isPrimary: true }
+    ],
+    description: "Ethereal 28-kali pure organza pishwas lined with soft silk, blooming with pastel resham threadwork floral sprays and scalloped hem border.",
+    isFeatured: true,
+    isBestSeller: false,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 19,
+    tags: ["organza pishwas", "dusty rose", "resham", "wedding wear", "maxi"]
+  },
+  {
+    title: "Gul-e-Lala Rust Orange Handcrafted Formal Maxi",
+    sku: "HED-MAX-047",
+    categorySlug: "maxis-pishwas",
+    price: 27000,
+    salePrice: 23999,
+    onSale: true,
+    stock: 9,
+    embroideryType: "Gota Patti",
+    fabric: "Pure Raw Silk & Chiffon",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: [{ name: "Rust Orange", hex: "#C04000" }, { name: "Ochre Gold", hex: "#CC7722" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1000&q=80", alt: "Rust Handcrafted Formal Maxi", isPrimary: true }
+    ],
+    description: "Vibrant festive formal maxi in warm rust and ochre silk, adorned with heavy gold gota patti geometric motifs and a voluminous organza flare.",
+    isFeatured: false,
+    isBestSeller: true,
+    isNewArrival: false,
+    rating: 4.8,
+    numReviews: 21,
+    tags: ["rust maxi", "gota patti", "raw silk", "mehndi gown", "pishwas"]
+  },
+  {
+    title: "Shahi Darbar Emerald Green Zari Work Pishwas",
+    sku: "HED-MAX-048",
+    categorySlug: "maxis-pishwas",
+    price: 34000,
+    salePrice: 29999,
+    onSale: true,
+    stock: 4,
+    embroideryType: "Multani Traditional Hand Embroidery",
+    fabric: "Banarsi Silk & Chiffon",
+    sizes: ["S", "M", "L", "XL", "Custom Size"],
+    colors: [{ name: "Royal Emerald", hex: "#0B4636" }],
+    images: [
+      { url: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=1000&q=80", alt: "Emerald Zari Work Pishwas", isPrimary: true }
+    ],
+    description: "Regal heritage ensemble fit for royalty. Deep emerald Banarsi silk Kalidar pishwas tailored with ancient Multani hand stitches, sitara, and pure metallic zari.",
+    isFeatured: true,
+    isBestSeller: true,
+    isNewArrival: true,
+    rating: 5.0,
+    numReviews: 36,
+    tags: ["emerald pishwas", "zari", "banarsi", "multani craft", "royal gown"]
+  }
+];
+
+export const couponsData = [
+  {
+    code: "MULTAN10",
+    description: "Flat 10% Off on all authentic Multani hand-embroidered collection",
+    discountType: "percentage",
+    discountValue: 10,
+    minOrderAmount: 3000,
+    maxDiscount: 5000,
+    validUntil: new Date("2026-12-31"),
+    isActive: true
+  },
+  {
+    code: "BRIDAL20",
+    description: "Rs. 5,000 Off on Luxury Bridal Lehengas and Heavily Embellished Suits",
+    discountType: "flat",
+    discountValue: 5000,
+    minOrderAmount: 45000,
+    validUntil: new Date("2026-12-31"),
+    isActive: true
+  },
+  {
+    code: "EIDMUBARAK",
+    description: "15% Festive Discount for Eid & Wedding Season Shopping",
+    discountType: "percentage",
+    discountValue: 15,
+    minOrderAmount: 8000,
+    maxDiscount: 4000,
+    validUntil: new Date("2026-12-31"),
+    isActive: true
+  },
+  {
+    code: "FREESHIP",
+    description: "Free TCS / Leopards Express Nationwide Delivery on any order",
+    discountType: "flat",
+    discountValue: 250,
+    minOrderAmount: 2000,
+    validUntil: new Date("2026-12-31"),
+    isActive: true
+  }
+];
+
+export const bannersData = [
+  {
+    title: "Hand Embroidered Dresses Multan",
+    subtitle: "Authentic Thousand-Year Artisan Needlework Delivered Across Pakistan",
+    tag: "Boutique Heritage Collection 2026",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=80",
+    link: "/shop",
+    buttonText: "Explore Boutique",
+    order: 1,
+    isActive: true
+  },
+  {
+    title: "Heirloom Bridal Lehengas & Ghararas",
+    subtitle: "Custom Stitched in Inner City Multan with Zardozi, Aari & Pure Tilla",
+    tag: "Bridal Couture",
+    image: "https://images.unsplash.com/photo-1675856531253-5940b77ea03e?auto=format&fit=crop&w=1600&q=80",
+    link: "/category/bridal-dresses",
+    buttonText: "View Bridal Wear",
+    order: 2,
+    isActive: true
+  },
+  {
+    title: "Multani Chikan Kaari & Shadow Work",
+    subtitle: "Bespoke Handcrafted Lawn & Khaddar Kurtis for Discerning Women",
+    tag: "Summer Essentials",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1600&q=80",
+    link: "/category/casual-daily-wear",
+    buttonText: "Shop Chikankari",
+    order: 3,
+    isActive: true
+  }
+];
+
+export const blogPostsData = [
+  {
+    title: "The Legacy of Multani Hand Embroidery: From Ancient Bazaars to Modern Brides",
+    slug: "legacy-of-multani-hand-embroidery",
+    excerpt: "Discover the thousand-year heritage of Multan's master needlecrafters, who transform fine lawn and silk into wearable art.",
+    coverImage: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
+    author: "Ustad Ghulam Rasool (Master Artisan)",
+    category: "Heritage & Craft",
+    readingTimeMinutes: 5,
+    isPublished: true,
+    content: `
+Multan, the historic City of Saints in Southern Punjab, has been the epicenter of needlework craftsmanship for over a millennium. When walking through the historic alleys of Hussain Agahi and Bata Wali, you can still hear the rhythmic clinking of embroidery hoops and the whisper of silk threads being drawn through taut fabrics.
+
+Unlike modern machine embroidery that creates stiff, uniform patterns, authentic Multani hand embroidery breathes with human intention. Each stitch—whether it is the intricate Bakhiya of Chikankari, the metallic brilliance of Zardozi, or the bold geometric motifs of Phulkari—takes anywhere from 40 to 350 hours to complete.
+
+At Hand Embroidered Dresses, our workshop supports more than 60 artisan families in Inner City Multan. When you purchase our handcrafted clothing, you are not just acquiring a dress; you are preserving an irreplaceable chapter of Pakistani cultural art.
+    `
+  },
+  {
+    title: "Choosing Your Dream Bridal Lehenga: Zardozi vs. Aari Work Guide",
+    slug: "bridal-lehenga-zardozi-vs-aari-guide",
+    excerpt: "A complete bride's guide to choosing the right embroidery technique, fabric weight, and colour palette for your Barat and Walima.",
+    coverImage: "https://images.unsplash.com/photo-1675856531253-5940b77ea03e?auto=format&fit=crop&w=1200&q=80",
+    author: "Zainab Malik (Senior Bridal Designer)",
+    category: "Bridal Guide",
+    readingTimeMinutes: 6,
+    isPublished: true,
+    content: `
+Planning your bridal outfit is one of the most exciting yet intricate decisions for any Pakistani bride. Two traditional techniques dominate luxury bridal wear: Zardozi and Aari work.
+
+### Zardozi (The Gold Thread Masterpiece)
+Originating in Persian royal courts, Zardozi uses metallic bullion wires (Nakshi and Dabka), sequins, and semi-precious stones. Because of the weight of the metals, Zardozi is best rendered on structured fabrics like pure micro-velvet, heavy Jamawar, and raw silk. It creates majestic 3D relief motifs perfect for evening Barat ceremonies.
+
+### Aari Work (The Flowing Needle)
+Aari embroidery uses a hooked needle to create delicate chain stitches that flow like pen strokes across fabric. Because it is lighter than Zardozi, it works beautifully on organza, tissue, and pure chiffon, allowing bridal ghararas and peshwas to have dramatic, fluid movement.
+    `
+  },
+  {
+    title: "How to Wash & Preserve Hand-Embroidered Garments for Decades",
+    slug: "how-to-wash-preserve-hand-embroidered-dresses",
+    excerpt: "Essential tips to protect delicate metallic threads, mirrors, and raw silks from tarnishing and thread snagging.",
+    coverImage: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80",
+    author: "Hand Embroidered Dresses Care Team",
+    category: "Garment Care",
+    readingTimeMinutes: 4,
+    isPublished: true,
+    content: `
+Hand-embroidered garments are heirloom investments meant to last across generations. Follow these expert tips from our Multan boutique:
+
+1. **Always Dry Clean Heavy Work**: Zardozi, Tilla, and Dabka work contain delicate metallic alloy coils that can tarnish or buckle when soaked in water. Always use reputable dry cleaners.
+2. **Iron on the Reverse Side**: Never place a hot iron directly onto embroidered motifs or mirrors. Always iron from the reverse side or place a soft muslin cloth over the embroidery.
+3. **Store in Breathable Muslin**: Avoid keeping pure silk or velvet in plastic bags for prolonged periods. Wrap your heirloom garments in pure unbleached cotton or muslin fabric.
+4. **Air Out Periodically**: Take your bridal outfits out twice a year to let them breathe in dry, indirect air.
+    `
+  }
+];
+
+export const sampleReviews = [
+  {
+    customerName: "Ayesha Malik (Lahore)",
+    rating: 5,
+    title: "Breathtaking Multani Embroidery!",
+    comment: "I ordered the Shahi Noorani Zardozi Bridal Lehenga for my Barat in Lahore. The quality of the needlework surpassed every designer brand in Gulberg at half the price! Truly authentic Multan craftsmanship.",
+    isApproved: true
+  },
+  {
+    customerName: "Dr. Samina Rizvi (Karachi)",
+    rating: 5,
+    title: "Pure Lawn & Exquisite Shadow Work",
+    comment: "The Multani Chikankari kurti is so light and breathable for Karachi summer weather. The hand stitches are so neat. Will definitely order again!",
+    isApproved: true
+  },
+  {
+    customerName: "Zainab Farooq (Islamabad)",
+    rating: 5,
+    title: "Superb Kashmiri Tilla Shawl",
+    comment: "The velvet shawl is a masterpiece! Draped so elegantly at my sister's winter wedding. Very fast shipping to Islamabad (received in 2 days via TCS).",
+    isApproved: true
+  },
+  {
+    customerName: "Mariam Qureshi (Multan)",
+    rating: 5,
+    title: "Proud of Our Multani Artisans",
+    comment: "Visiting their shop in Hussain Agahi was such a pleasure, and ordering online was equally seamless. The khussas and Chikankari kurtis are top tier.",
+    isApproved: true
+  }
+];

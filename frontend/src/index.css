@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    background-color: #FDFBF7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+
+  /* Urdu typography */
+  [dir="rtl"] {
+    font-family: 'Noto Nastaliq Urdu', 'Poppins', serif;
+  }
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 1.8;
+  }
+}
+
+/* Custom Embroidery Motifs & Styling */
+.embroidery-border {
+  border: 1px solid #C5A059;
+  position: relative;
+}
+
+.embroidery-border::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px dashed #D4AF37;
+  pointer-events: none;
+}
+
+/* Stitch pattern divider */
+.stitch-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #C5A059;
+}
+
+.stitch-divider::before,
+.stitch-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px dashed #D4AF37;
+}
+
+.stitch-divider:not(:empty)::before {
+  margin-right: 1.25em;
+}
+
+.stitch-divider:not(:empty)::after {
+  margin-left: 1.25em;
+}
+
+/* Gold Gradient Shimmer */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #A88125 0%, #E5C158 50%, #B88E2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5C061D;
+}
