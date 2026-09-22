@@ -87,7 +87,25 @@ app.use('/api', limiter);
 const staticUploadsDir = process.env.VERCEL ? '/tmp/uploads' : path.join(process.cwd(), 'uploads');
 app.use('/uploads', express.static(staticUploadsDir));
 
-// Health Check & Business Info
+// API Root, Health Check & Business Info
+app.get('/api', (req, res) => {
+  res.status(200).json({
+    status: 'online',
+    store: BUSINESS_INFO.name,
+    tagline: BUSINESS_INFO.tagline,
+    city: BUSINESS_INFO.city,
+    phone: BUSINESS_INFO.phone,
+    endpoints: {
+      health: '/api/health',
+      info: '/api/info',
+      products: '/api/products',
+      categories: '/api/categories',
+      banners: '/api/banners',
+      blogs: '/api/blogs'
+    }
+  });
+});
+
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     status: 'online',

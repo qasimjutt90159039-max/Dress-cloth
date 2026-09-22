@@ -1,6 +1,11 @@
 import mongoose from 'mongoose';
 
 export const connectDB = async () => {
+  // Reuse existing connection if already connected (for serverless instances)
+  if (mongoose.connection.readyState >= 1) {
+    return mongoose.connection;
+  }
+
   // If no MongoDB URI is set in cloud/serverless environment, immediately use the in-memory fallback store
   if (!process.env.MONGODB_URI && (process.env.VERCEL || process.env.NODE_ENV === 'production')) {
     console.log('[MongoDB]: Running in fallback mock mode (no MONGODB_URI provided in production).');
